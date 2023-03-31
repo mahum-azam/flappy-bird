@@ -1,0 +1,70 @@
+/* CSS styling for Flappy Bird */
+
+/* Removes default browser padding */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Set sizing, border, and placement of the #game element on the browser */
+#game{
+
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+
+    /* Centers game in browser */
+    margin: auto;
+
+    /* Prevents elements from leaving the game screen */
+    overflow: hidden;
+}
+
+/* Creating the design of the #block element, which are the walls */
+#block{
+    /* Setting the location of the #block element*/
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+
+    /* Creates an infinite loop using the keyframes animation */
+    /* Sets speed of movement across the game */
+    /* Using linear creates a seamless loop */
+    animation: block 2s infinite linear;
+}
+
+/* Moves the #block element across the screen */
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+
+/* Creating the design of the #hole element, which are the areas in the wall you can fly through */
+/* Ultimately follows the same design as the #block element since it moves with the wall */
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: white;
+
+    /* Relative positioning: Can be moved by other objects from its normal position */
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+
+/* Creating the design of the #character element, which is the player's avatar */
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+
+    /* Absolute positioning: Moves with the page or screen */
+    position: absolute;
+    top: 100px;
+
+    /* To make the #character element into a circle, rather than a square */
+    border-radius: 50%;
+}

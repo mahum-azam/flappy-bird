@@ -1,0 +1,42 @@
+<!-- HTML structure for Flappy Bird -->
+
+<!-- Start HTML document -->
+<!DOCTYPE html>
+
+<!-- Will run the jump() function in the JS script when you click anywhere on the page. -->
+<html lang="en" onclick="jump()">
+
+    <!-- Head area -->
+    <head>
+
+        <meta charset="UTF-8">
+
+        <!-- Declare title in head area -->
+        <title>Flappy Bird</title>
+
+        <!-- Link to CSS stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <!-- Body area -->
+    <body>
+
+        <!-- Setting these div elements inside the game to style with CSS -->
+
+        <!-- Div element for the game itself -->
+        <div id="game">
+            <!-- Div element for the walls -->
+            <div id="block"></div>
+            <!-- Div element for the holes in the walls -->
+            <div id="hole"></div>
+            <!-- Div element for the player avatar -->
+            <div id="character"></div>
+        </div>
+    </body>
+
+    <!-- Link to JavaScript script -->
+    <script src="app.js"></script>
+
+</html>
+<!-- End HTML document -->
