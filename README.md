@@ -1,4 +1,4 @@
 # Flappy Bird
 
 Demonstration video:
-https://giphy.com/embed/9hP95479qawX7YARRY
+https://giphy.com/embed/RbM88Ud2YUwURRqll7
